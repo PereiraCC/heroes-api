@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha src/dist/tests/heroes.test.js --exit"
+    "test": "mocha src/dist/tests/images.test.js --exit"
   },
   "keywords": [],
   "author": "",
