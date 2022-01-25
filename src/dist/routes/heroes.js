@@ -11,5 +11,11 @@ router.get('/:publisher', [
     (0, express_validator_1.check)('publisher').custom(p => (0, allowableCollections_1.allowableCollections)(p, ['dc', 'marvel'])),
     files_validation_1.fieldsValidation
 ], heroes_1.getAllHeroesByPublisher);
+router.get('/:publisher/:id', [
+    (0, express_validator_1.check)('publisher', 'The field publisher is required').not().isEmpty(),
+    (0, express_validator_1.check)('id', 'The field identification is required').not().isEmpty(),
+    (0, express_validator_1.check)('publisher').custom(p => (0, allowableCollections_1.allowableCollections)(p, ['dc', 'marvel'])),
+    files_validation_1.fieldsValidation
+], heroes_1.getHeroById);
 exports.default = router;
 //# sourceMappingURL=heroes.js.map
