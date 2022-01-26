@@ -65,3 +65,6 @@ In the file add a new rule ** no-console ** with a value of **false**
 ```
     npm install
 ```
+
+## Docker container
+[Heroes API Container](https://hub.docker.com/r/pereira00/heroes-api)
